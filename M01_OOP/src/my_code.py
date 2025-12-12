@@ -16,8 +16,22 @@ Therefore, with NumericStrings, 124+19=26
 
 class NumericString:
     #Implement class here!
-
-
+    def __init__(self, v):
+        if v >= 0:
+            self.v = str(v)
+        else:
+            raise ValueError("fail")
+    
+    def __str__(self):
+        return self.v
+        
+    def __add__(self, other):
+        a = self.v.zfill(max(len(self.v), len(other.v)))
+        b = other.v.zfill(max(len(self.v), len(other.v)))
+    
+        print(self)
+        print(other)
+    
         
 
 if __name__ == "__main__":
