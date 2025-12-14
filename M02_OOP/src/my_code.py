@@ -3,6 +3,13 @@ from abc import ABC, abstractmethod
 class BaseClass(ABC):
     #Your class here
 
+    def __init__(self, v):
+        self.v = v
+
+    @abstractmethod
+    def print(self):
+        pass
+
     @abstractmethod
     def __str__(self):
         pass
@@ -10,8 +17,19 @@ class BaseClass(ABC):
 class ForwardClass(BaseClass):
     #Your class here
 
+    def print(self):
+        print(self.v)
+
+    def __str__(self):
+        return str(self.v)
+
 class BackwardClass(BaseClass):
-    #Your class here
+    def print(self):
+        print(str(self))
+
+    def __str__(self):
+        return str(self.v)[::-1]
+
     
 if __name__ == "__main__":
     try:
