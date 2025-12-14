@@ -4,7 +4,7 @@ Pythonin jatkokurssi, itsenäinen opiskelu. Tehtäväpaketti Savonia AMK:lta
 
 # Sisältö
 
-**1. [ ] Olio-ohjelmointi Pythonissa**
+**1. [x] Olio-ohjelmointi Pythonissa**
     - Tehtävät 1-4
 **2. [ ] Rinnakkaisuus(Threads)**
     - Tehtävät 5-7

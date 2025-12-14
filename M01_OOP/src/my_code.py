@@ -28,9 +28,26 @@ class NumericString:
     def __add__(self, other):
         a = self.v.zfill(max(len(self.v), len(other.v)))
         b = other.v.zfill(max(len(self.v), len(other.v)))
+   
+        result = ''
+
+        for i, j in zip(reversed(a), reversed(b)):
+            sum_digit = (int(i) + int(j)) % 10
+            result = str(sum_digit) + result
+        
+        return NumericString(int(result))
     
-        print(self)
-        print(other)
+    def __mul__(self, other):
+        a = self.v.zfill(max(len(self.v), len(other.v)))
+        b = other.v.zfill(max(len(self.v), len(other.v)))
+
+        result = ''
+
+        for i, j in zip(reversed(a), reversed(b)):
+            sum_digit = (int(i) * int(j)) % 10
+            result = str(sum_digit) + result
+        
+        return NumericString(int(result))
     
         
 
