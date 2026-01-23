@@ -10,13 +10,20 @@ if __name__ == "__main__":
         print('<-heavy_computing('+str(idx)+')')
 
 def start_threads(f, N):
-    pass
+    threads = []
+    for idx in range(N):
+        th = threading.Thread(target=f, args=(idx,))
+        th.start()
+        threads.append(th)
+    return threads
 
 def wait_threads(th_list):
-    pass
+    for th in th_list:
+        th.join()
 
 #Test software under this if
 if __name__ == "__main__":
+    N = 5
     th_list=start_threads(heavy_computing, N)
     wait_threads(th_list)
 
