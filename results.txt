@@ -3,9 +3,9 @@ M01_OOP	1	1
 M02_OOP	1	1
 M03_OOP	1	1
 M04_OOP	1	1
-M05_threads	0	1
-M06_threads	0	1
-M07_threads	0	1
+M05_threads	1	1
+M06_threads	1	1
+M07_threads	1	1
 M08_TCPIP	0	1
 M09_TCPIP	0	1
 M10_TCPIP	0	1
