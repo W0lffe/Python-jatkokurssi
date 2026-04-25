@@ -40,6 +40,8 @@ Exit mainloop()
 events={}
 active_mainloop=True
 
+hello_counter = 0 
+
 def mainloop():
     init_mainloop()
     
@@ -60,7 +62,15 @@ def event_exit():
     global active_mainloop
     active_mainloop=False
 
+def event_hello_world():
+    global hello_counter
+    hello_counter += 1
+    print(f'"Hello World!" have been printed {hello_counter} times!')
 
+def event_empty_rows():
+    number = int(input("Number of empty rows: "))
+    for i in range(number):
+        print()
 
 #Implement functions, variables etc to handle events here.
 
@@ -70,7 +80,8 @@ def init_mainloop():
     global events
     events={}
     events['x']=event_exit
-
+    events['m']=event_hello_world
+    events['r']=event_empty_rows
     #Add functions to events dict here.
 
 
