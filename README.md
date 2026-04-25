@@ -6,13 +6,13 @@ Pythonin jatkokurssi, itsenäinen opiskelu. Tehtäväpaketti Savonia AMK:lta
 
 1. [x] Olio-ohjelmointi Pythonissa
     - Tehtävät 1-4 
-2. [ ] Rinnakkaisuus(Threads)
+2. [x] Rinnakkaisuus(Threads)
     - Tehtävät 5-7
-3. [ ] TCP/IP
+3. [-] TCP/IP
     - Tehtävät 8-10
-4. [ ] REST-rajapinnat
+4. [x] REST-rajapinnat
     - Tehtävä 11
-5. [ ] SQL-tietokannat
+5. [x] SQL-tietokannat
     - Tehtävät 12-13
 6. [ ] Graafinen käyttöliittymä
     - Tehtävät 14-17
